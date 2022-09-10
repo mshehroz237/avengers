@@ -67,28 +67,9 @@ or
 npm run watch
 ```
 
-With all of the steps above, you can visit [http://localhost:3001](http://localhost:3001) to access the application.
-
-## Usage
-
-You may find a video walkthrough showcasing the application deployed on Heroku [here](https://youtu.be/b9gedW4CJQQ).
-
 ## Questions
 
-If you have any questions, please feel free to reach me at:
-
-- GitHub: Yahplee
-- Email: [alee68@fordham.edu](mailto:alee@fordham.edu)
-
-## Credits
-
-Collaborators
-
-- Denise Yin: Click [Here](https://github.com/dy2395) for her GitHub profile
-- Muhammad Azam: Click [Here](https://github.com/Coding291) for her GitHub profile
-- Muhammad Scheroz: Click [Here](https://github.com/mshehroz237) for her GitHub profile
-- Jeremiah Vega: Click [Here](https://github.com/jmvega316) for her GitHub profile
-
+If you have any questions, please feel free to 
 ## License
 
 This project is nested under the following license: MPL2.0
