@@ -1,0 +1,50 @@
+<div class="jumbotron2 jumbotron-fluid text-center" style="background-color:rgb(196, 83, 200);border-radius:0%">
+  <div class="container" style="background-color:rgb(196, 83, 200);">
+    <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;background-color:rgb(196, 83, 200)">Marvel and Justice League Characters</h2>
+  </div>
+</div>
+
+
+
+<div class="d-flex justify-content-center" style="border-top: 1px solid #ccc;padding-bottom:5%;text-align:center" >
+  
+<div >
+ <table style="float: left;" >
+    <thead>
+      <tr >
+        <th style="color: black;">Marvel Characters</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each MarvelHeroView }}
+      <tr>
+        <td> <a href="https://marvel.wikia.com/{{herolink}}" target="_blank">{{HeroName}}</a> </td> 
+      </tr>
+      {{/each}}
+  
+    </tbody>
+  </table>
+</div>
+
+<div >
+ <table style="float: right;" >
+    <thead>
+      <tr >
+        <th style="color: black;">Justice League Characters</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      {{#each DcHeroView }}
+      <tr>
+      <td> <a href="https://dc.fandom.com/{{herolink}}" target="_blank">{{HeroName}}</a> </td> 
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+ 
+</div>
+  
+</div>

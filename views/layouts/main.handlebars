@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justice League vs Avengers Post Blog</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ 
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="wrapper d-flex justify-content-center" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <header style="background-color:rgb(196, 83, 200);" > 
+        
+        <img src="/images/VS.png" alt="Justice League vs Avengers" style="border-radius: 30%;" width = "50px" height = "60px" margin = "10px"/>
+        <nav class="main-nav">
+          <a href="/" style="color: white;">Homepage</a>
+          <a href="/dashboard"  style="color: white;">Dashboard</a>
+          <a href="/MarvelAndDC"  style="color: white;" >Characters</a>
+          <a href="/follow"  style="color: white;">Follow</a>
+          {{#if loggedIn}}
+          <button id="logout"  style="color: white;" class="btn btn-primary">Logout</button>
+          {{else}}
+          <a href="/login"  class="btn btn-primary">Login</a>
+          {{/if}}
+        </nav>
+    </header>
+
+    <main>
+      {{{ body }}}
+    </main>
+
+
+    <footer style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:black" >
+      Thanks for visiting!
+    </footer>
+
+  </div>
+  
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+
+
+</body>
+
+</html>

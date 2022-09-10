@@ -1,0 +1,53 @@
+<div class="jumbotron2 jumbotron-fluid text-center" style="background-color:rgb(196, 83, 200);border-radius:0%">
+  <div class="container" style="background-color:rgb(196, 83, 200);">
+    <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;background-color:rgb(196, 83, 200)">{{singlePost.title}}</h2>
+  </div>
+</div>
+
+<article class="text-center">
+  
+  <div  style="color: black;" >
+    <h2 style="color: black;">Post Content</h2>
+    <hr>
+    <p style="font-size:24px;color:black">{{singlePost.contents}} </p>
+  </div>
+  <div  style="font-size:15px;color:black" >
+    {{singlePost.user.username}} created on {{format_date singlePost.createdAt}} at {{format_time singlePost.createdAt}}
+  </div>
+</div>
+
+{{!-- this is where we would render the images and name of heroes --}}
+
+
+<div class="comment-area text-center" style="border-top: 1px solid #ccc;background-color:white">
+  <form class="comment-form mt-5">
+
+    <div>
+      <textarea name="comment-body" style="color: black;" placeholder="Please type your comment"></textarea>
+    </div>
+
+    <div>
+      <button type="submit">Add comment</button>
+    </div>
+  </form>
+
+
+  {{#each singlePost.comments as |comment| }}
+  <div class="comment" >
+    <p style="color: black;font-size:25px">
+      {{contents}}
+    </p>
+  
+  <h6 style="color:black">
+ Commented by {{user.username}} on {{format_date createdAt}}
+  </h6>
+     
+
+    <a href="/like/comments/{{id}}/{{post_id}}" class="btn btn-primary">Like {{like}} </a>
+    <a href="/dislike/comments/{{id}}/{{post_id}}" class="btn btn-primary">Dislike {{dislike}} </a>
+  </div>
+  {{/each}}
+</div>
+
+<script src="/javascript/comment.js"></script>
+

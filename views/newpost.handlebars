@@ -1,0 +1,49 @@
+ <div class="jumbotron2 jumbotron-fluid text-center" style="background-color:rgb(196, 83, 200);border-radius:0%">
+  <div class="container" style="background-color:rgb(196, 83, 200);">
+    <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;background-color:rgb(196, 83, 200)">Create New Fight Post</h2>
+  </div>
+</div>
+
+
+<section class="text-center p-2">
+    <div class="container">
+      <!-- Every grid layout we create starts with an HTML element receiving a class of row -->
+      <!-- align-items-end change the alignment of flex items to end -->
+      <div class="row align-items-end">
+        <div class="col-12 col-md-6 text-center p-5">
+          <img src="/images/JLDCLogo2.png" alt="Justice League Logo" width="310" height="auto"/>
+          <h3 style="color: black;"> Justice League</h3>
+          {{!-- <button class="btn btn-primary" id = "JLPickButton"> 
+            Pick a Hero
+          </button> --}}
+          <div class="card-body2 p-5" id ="JLHero">
+          </div>
+        </div>
+        <!-- Uses a combination of col-* values to make full-size on small devices and half-size on medium or larger devices -->
+        <div class="col-12 col-md-6 text-center p-5">
+          <img src="/images/AvengersLogo1.png" alt="Avengers Logo" width="310" height="auto" />
+          <h3 style="color: black;"> Avengers</h3>
+          {{!-- <button class="btn btn-primary" id = "AvengerPickButton"> 
+            Pick a Hero
+          </button> --}}
+          <div class="card-body2 p-5" id ="AVHero">
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="card text-center m-2">
+    <form class="new-post-form p-2">
+        <div class="mt-4">
+            <label for="post-title" style="color: black;">Title</label>
+            <input type="text" id="post-title" style="color: black;" name="post-title" placeholder="(Super Man vs Spider Man) Please add hero names 1 from justice league and 1 from avengers in the title."></input>
+        </div>
+        <div class="mt-5">
+            <label for="post-content" style="color: black;">Content</label>
+            <textarea rows="6" cols="80" id="post-content" name="post-content" style="color: black;"></textarea>
+        </div>
+        <button type="submit" class="m-4">Create Post</button>
+    </form>
+  </div>
+</section>
+
+  <script src="/javascript/add-post.js"></script>

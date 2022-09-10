@@ -1,0 +1,51 @@
+<style>
+  blockquote {
+  min-height: 5em;
+  padding   : 1em 4em;
+  font      : 1em/150% sans-serif;
+  position  : relative;
+  background-color: rgb(196, 83, 200);
+}
+
+blockquote::before,
+blockquote::after {
+  position: absolute;
+  height  : 3rem;
+  font    : 6rem/100% Georgia, "Times New Roman", Times, serif;
+}
+
+blockquote::before {
+  content: '“';
+  top    : 0.3rem;
+  left   : 0.9rem;
+}
+
+blockquote::after {
+  content: '”';
+  bottom : 0.3rem;
+  right  : 0.8rem;
+}
+
+blockquote:lang(fr)::before {
+  content: '«';
+  top    : -1.5rem;
+  left   : 0.5rem;
+}
+
+blockquote:lang(fr)::after {
+  content: '»';
+  bottom : 2.6rem;
+  right  : 0.5rem
+}
+
+blockquote i {
+  display   : block;
+  font-size : 0.8em;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+</style>
+
+
+<blockquote style="text-align:left"> <a href="/posts/{{id}}" style="font-size:x-large;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:white">{{title}}</a> <i style="background-color: rgb(196, 83, 200);"><a href="/posts/{{id}}" style="color:white">{{comment.length}} {{format_plural "See Comment" comment.length}}</a>  Published by "{{user.username}}" on {{format_date createdAt}} at {{format_time createdAt}}</i></blockquote>

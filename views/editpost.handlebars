@@ -1,0 +1,26 @@
+<div class="jumbotron2 jumbotron-fluid text-center" style="background-color:rgb(196, 83, 200);border-radius:0%">
+  <div class="container" style="background-color:rgb(196, 83, 200);">
+    <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;background-color:rgb(196, 83, 200)">Edit Post</h2>
+  </div>
+</div>
+
+
+<article class="text-center">
+ 
+  <form class="edit-post-form form-fluid">
+    <input type="hidden" name="editPostId" value={{editPost.id}}/>
+    <div class="mt-4">
+            <label for="editpost-title" style="color: black;">Title</label>
+            <input type="text" name="editpost-title" style="color: grey;" value="{{editPost.title}}"></input>
+    </div>
+    <div class="mt-5">
+            <label for="editpost-content" style="color: black;">Content</label>
+            <textarea rows="6" cols="80" style="color: grey;"  name="editpost-content">{{editPost.contents}}</textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Save post</button>
+    <button class="btn btn-danger" type="button">Delete post</button>
+  </form>
+</article>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
